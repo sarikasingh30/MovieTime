@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/index.css">
+        <title>Home</title>
+    </head>
+
+    <body>
+        <div id="navbar">
+            <div onclick="window.location.href='index.html'"><h3>Home</h3></div>
+            <div onclick="window.location.href='login.html'" ><h3>Login</h3></div>
+            <div onclick="window.location.href='signup.html'"><h3>Signup</h3></div>
+        </div>
+        <div id="slideshow" >
+            <img id="sl_img">
+        </div>
+        <div id="sort-buttons">
+            <select id="selectid" onchange="handlesort()">
+                <option value="">Ratings</option>
+                <option value="high">High To Low</option>
+                <option value="low">Low To High</option>
+            </select>
+            <!--Add sorting here-->
+        </div>
+        <div id="movies">
+            
+        </div>
+    </body>
+
+</html>
+<script src="./scripts/index.js">
+
+</script>
