@@ -28,20 +28,7 @@ img {
   height: 95%;
   margin:auto;
 }
-#movies {
-  display: grid;
-  grid-template-columns: repeat(3, 500px);
-  grid-template-rows: repeat(3, 730px);
-  gap: 10px;
-  width: 90%;
-  padding-bottom: 5px;
-  margin: auto;
-  margin-top: 20px;
- 
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
+
 #sort-buttons {
   height: 60px;
   width: 80%;
@@ -60,28 +47,42 @@ select {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+#movies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 90%;
+  padding-bottom: 5px;
+  margin: auto;
+  margin-top: 20px;
+ 
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
 #movies > div > img {
   width: 80%;
-  margin:auto;
+  margin-left:5%;
   height: 60%;
 }
 #movies > div {
-  margin-top: 30px;
-  margin-left:auto;
+  margin-top: 4%;
+  margin-left: 15%;
 }
 #movies > div > h2 {
   font-size: 45px;
   color: black;
-  text-align:justify;
+  text-align:center;
 }
 #movies > div > h3 {
   font-size: 30px;
   color: brown;
-  text-align:justify;
+  text-align:center;
 }
 #movies > div > h4 {
   font-size: 25px;
   color: red;
-  text-align:justify;
+  text-align:center;
 }
